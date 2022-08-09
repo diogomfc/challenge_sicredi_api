@@ -1,0 +1,402 @@
+{
+	"id": "1108e52d-fe65-40f5-96b3-246d73becd29",
+	"name": "Secredi_User_API",
+	"timestamp": "2022-08-09T01:05:30.619Z",
+	"collection_id": "22630227-7593caa8-8922-4ce4-86ff-3c7d517ca72b",
+	"folder_id": "22630227-bb48ecd3-b8ba-4b5f-9f32-eb475a30c7bd",
+	"environment_id": "0",
+	"totalPass": 9,
+	"totalFail": 6,
+	"results": [
+		{
+			"id": "15106680-e92d-4be2-856e-c8ff6ad56fa0",
+			"name": "Todas Simulações - 200",
+			"url": "http://localhost:8080/api/v1/simulacoes",
+			"time": 145,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"validar cpf": true,
+				"Validar status de retorno": true,
+				"validar tempo de retorno da api": true
+			},
+			"testPassFailCounts": {
+				"validar cpf": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validar status de retorno": {
+					"pass": 1,
+					"fail": 0
+				},
+				"validar tempo de retorno da api": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				145
+			],
+			"allTests": [
+				{
+					"validar cpf": true,
+					"Validar status de retorno": true,
+					"validar tempo de retorno da api": true
+				}
+			]
+		},
+		{
+			"id": "ee9ef438-d8d9-4bc0-aa52-2fdb3f55d7d6",
+			"name": "Todas Simulações - 204",
+			"url": "http://localhost:8080/api/v1/simulacoes",
+			"time": 19,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Validar status de retorno": false
+			},
+			"testPassFailCounts": {
+				"Validar status de retorno": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				19
+			],
+			"allTests": [
+				{
+					"Validar status de retorno": false
+				}
+			]
+		},
+		{
+			"id": "621f03e4-ab5d-4616-b89c-d7fa3614bce2",
+			"name": "Uma Simulações - 200",
+			"url": "http://localhost:8080/api/v1/simulacoes/3462506080012",
+			"time": 23,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Validar status de retorno": false
+			},
+			"testPassFailCounts": {
+				"Validar status de retorno": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				23
+			],
+			"allTests": [
+				{
+					"Validar status de retorno": false
+				}
+			]
+		},
+		{
+			"id": "0f77b60c-f550-4aed-9cac-6f96ddbcb938",
+			"name": "Uma Simulações - 404",
+			"url": "http://localhost:8080/api/v1/simulacoes/3462506080013",
+			"time": 7,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Validar status de retorno": true
+			},
+			"testPassFailCounts": {
+				"Validar status de retorno": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				7
+			],
+			"allTests": [
+				{
+					"Validar status de retorno": true
+				}
+			]
+		},
+		{
+			"id": "5534d59f-be0b-47a6-8ca5-39726b66d0a5",
+			"name": "Criar uma Simulação - 201",
+			"url": "http://localhost:8080/api/v1/simulacoes",
+			"time": 35,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Validar status de retorno": true
+			},
+			"testPassFailCounts": {
+				"Validar status de retorno": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				35
+			],
+			"allTests": [
+				{
+					"Validar status de retorno": true
+				}
+			]
+		},
+		{
+			"id": "686556ba-adee-4613-a18d-04e1dd8c79ac",
+			"name": "Criar uma Simulação - 400",
+			"url": "http://localhost:8080/api/v1/simulacoes",
+			"time": 12,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Validar status de retorno": true
+			},
+			"testPassFailCounts": {
+				"Validar status de retorno": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				12
+			],
+			"allTests": [
+				{
+					"Validar status de retorno": true
+				}
+			]
+		},
+		{
+			"id": "ee1a225e-f186-4594-a7bc-1d441f2e984a",
+			"name": "Criar uma Simulação - 409",
+			"url": "http://localhost:8080/api/v1/simulacoes",
+			"time": 24,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Validar status de retorno": false
+			},
+			"testPassFailCounts": {
+				"Validar status de retorno": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				24
+			],
+			"allTests": [
+				{
+					"Validar status de retorno": false
+				}
+			]
+		},
+		{
+			"id": "bc9ccef4-add4-4b5c-abea-a9da6f50c197",
+			"name": "Alterar Simulação - 200",
+			"url": "http://localhost:8080/api/v1/simulacoes/34625060800",
+			"time": 22,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Validar status de retorno": true
+			},
+			"testPassFailCounts": {
+				"Validar status de retorno": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				22
+			],
+			"allTests": [
+				{
+					"Validar status de retorno": true
+				}
+			]
+		},
+		{
+			"id": "92ef0b0d-43bf-4633-acec-e25763c18608",
+			"name": "Alterar Simulação - 404",
+			"url": "http://localhost:8080/api/v1/simulacoes/99999999999",
+			"time": 9,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Validar status de retorno": true
+			},
+			"testPassFailCounts": {
+				"Validar status de retorno": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				9
+			],
+			"allTests": [
+				{
+					"Validar status de retorno": true
+				}
+			]
+		},
+		{
+			"id": "6ba36413-6d7e-4361-a58b-3e01ddf552c9",
+			"name": "Alterar Simulação - 400",
+			"url": "http://localhost:8080/api/v1/simulacoes/34625060800",
+			"time": 107,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Validar status de retorno": false
+			},
+			"testPassFailCounts": {
+				"Validar status de retorno": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				107
+			],
+			"allTests": [
+				{
+					"Validar status de retorno": false
+				}
+			]
+		},
+		{
+			"id": "408f4eb3-0e84-470c-8ef8-1c45ecd8aaea",
+			"name": "Remove uma Simulação - 204",
+			"url": "http://localhost:8080/api/v1/simulacoes/12",
+			"time": 10,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Validar status de retorno": false
+			},
+			"testPassFailCounts": {
+				"Validar status de retorno": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				10
+			],
+			"allTests": [
+				{
+					"Validar status de retorno": false
+				}
+			]
+		},
+		{
+			"id": "1f973d94-d0b0-4cff-81f1-a673bb3b7654",
+			"name": "Remove uma Simulação - 404",
+			"url": "http://localhost:8080/api/v1/simulacoes/0",
+			"time": 6,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Validar status de retorno": false
+			},
+			"testPassFailCounts": {
+				"Validar status de retorno": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				6
+			],
+			"allTests": [
+				{
+					"Validar status de retorno": false
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 419,
+	"collection": {
+		"requests": [
+			{
+				"id": "15106680-e92d-4be2-856e-c8ff6ad56fa0",
+				"method": "GET"
+			},
+			{
+				"id": "ee9ef438-d8d9-4bc0-aa52-2fdb3f55d7d6",
+				"method": "GET"
+			},
+			{
+				"id": "621f03e4-ab5d-4616-b89c-d7fa3614bce2",
+				"method": "GET"
+			},
+			{
+				"id": "0f77b60c-f550-4aed-9cac-6f96ddbcb938",
+				"method": "GET"
+			},
+			{
+				"id": "5534d59f-be0b-47a6-8ca5-39726b66d0a5",
+				"method": "POST"
+			},
+			{
+				"id": "686556ba-adee-4613-a18d-04e1dd8c79ac",
+				"method": "POST"
+			},
+			{
+				"id": "ee1a225e-f186-4594-a7bc-1d441f2e984a",
+				"method": "POST"
+			},
+			{
+				"id": "bc9ccef4-add4-4b5c-abea-a9da6f50c197",
+				"method": "PUT"
+			},
+			{
+				"id": "92ef0b0d-43bf-4633-acec-e25763c18608",
+				"method": "PUT"
+			},
+			{
+				"id": "6ba36413-6d7e-4361-a58b-3e01ddf552c9",
+				"method": "PUT"
+			},
+			{
+				"id": "408f4eb3-0e84-470c-8ef8-1c45ecd8aaea",
+				"method": "DELETE"
+			},
+			{
+				"id": "1f973d94-d0b0-4cff-81f1-a673bb3b7654",
+				"method": "DELETE"
+			}
+		]
+	}
+}
